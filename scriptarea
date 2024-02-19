@@ -1,0 +1,22 @@
+#!/bin/bash
+# Query: 
+# ContextLines: 1
+
+
+
+prefix="output2"
+filename="targetxt.txt"
+origen="./"
+destino="salidabatch"
+
+split -l 1000 $filename $prefix
+tar cvfz output.tar.gz $prefix*
+
+#crear directorios
+#mkdir $origen
+mkdir $destino
+mv output.tar.gz $destino/output2.tar.gz
+cd $destino
+tar xvfz output2.tar.gz
+rm output2.tar.gz
+cat $prefix* >texto.txt
