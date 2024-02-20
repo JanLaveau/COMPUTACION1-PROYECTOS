@@ -11,7 +11,7 @@
     border: 10px solid rgba(149, 7, 244, 0.494);
 ">TITULO</h1>
         <p tooltip="about w3schools"> Hola mi nombre ess</p>
-<table>
+<table border="1">
     <tr> 
         <td>NAME:</td>
         <td>Luke Skywalker</td>
