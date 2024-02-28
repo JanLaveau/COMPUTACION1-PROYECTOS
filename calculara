@@ -1,0 +1,18 @@
+print("Hello world")
+a=[1,2,3,4,5,6,786,456]
+print(a)
+m = "mi casa"
+n = 'mi "casa"'
+p = ''' mi casa amarilla
+ muy distinta a a todas
+ las demas casas negras
+ '''
+print (p) 
+img = list(p)
+print(img)
+print('el elemento es -->',img[1:10])
+
+
+a=5
+b=10
+print("suma de a+b es:", a+b)
