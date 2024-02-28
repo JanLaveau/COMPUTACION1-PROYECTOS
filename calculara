@@ -16,3 +16,8 @@ print('el elemento es -->',img[1:10])
 a=5
 b=10
 print("suma de a+b es:", a+b)
+print("resta de a-b es:", a-b)
+print("multiplicacion de a*b es:", a*b)
+print("division de a-b es:", a/b)
+print("porcentaje de a%b es:", a%b)
+print("el cuadrado de a**b es:", a**b)
