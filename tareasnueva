@@ -1,0 +1,20 @@
+#ejercicio1
+print("nombre completo")
+nombre= str(input())
+apellido_paterno= str(input())
+apellido_materno= str(input())
+print(nombre+" " +apellido_paterno+" " + apellido_materno)
+nombre_completo=apellido_paterno+" "+apellido_materno+" "+nombre
+print(nombre_completo.upper())
+print(nombre_completo.lower())
+print(nombre_completo.capitalize())
+#ejercicio2
+nombre = input("¿Cual es tu nombre? ")
+print(nombre.upper() + " tiene " + str(len(nombre)) + " letras")
+#ejercicio4
+frase = input("Dame una frase: ")
+vocal = input("dame una vocal:  ")
+print(frase+" "+vocal)
+#ejercicio5
+correo = input("Dime tu correo electrónico: ")
+print(correo[:correo.find('@')] + '@umich.mx')
