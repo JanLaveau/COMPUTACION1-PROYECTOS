@@ -12,13 +12,9 @@ print(nombre_completo.capitalize())
 nombre = input("¿Cual es tu nombre? ")
 print(nombre.upper() + " tiene " + str(len(nombre)) + " letras")
 #ejercicio4
-frase = input("Dame una frase: ")
-vocal = input("dame una vocal:  ")
-frase=frase.replace('a', vocal)
-frase=frase.replace('e', vocal)
-frase=frase.replace('i', vocal)
-frase=frase.replace('o', vocal)
-frase=frase.replace('u', vocal)
+frase = str(input("Dame una frase: "))
+vocal = str(input("dame una vocal:  "))
+frase=frase.replace(vocal,vocal.upper())
 print(frase)
 
 #ejercicio5
