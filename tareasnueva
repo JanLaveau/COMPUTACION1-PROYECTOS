@@ -14,7 +14,13 @@ print(nombre.upper() + " tiene " + str(len(nombre)) + " letras")
 #ejercicio4
 frase = input("Dame una frase: ")
 vocal = input("dame una vocal:  ")
-print(frase+" "+vocal)
+frase=frase.replace('a', vocal)
+frase=frase.replace('e', vocal)
+frase=frase.replace('i', vocal)
+frase=frase.replace('o', vocal)
+frase=frase.replace('u', vocal)
+print(frase)
+
 #ejercicio5
 correo = input("Dime tu correo electrónico: ")
 print(correo[:correo.find('@')] + '@umich.mx')
