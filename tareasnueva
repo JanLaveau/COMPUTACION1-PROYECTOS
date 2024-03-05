@@ -11,6 +11,11 @@ print(nombre_completo.capitalize())
 #ejercicio2
 nombre = input("¿Cual es tu nombre? ")
 print(nombre.upper() + " tiene " + str(len(nombre)) + " letras")
+#ejercicio3
+cel = input("dime tu numero de telefono")
+mostrar=cel[3:13]
+print(mostrar)
+
 #ejercicio4
 frase = str(input("Dame una frase: "))
 vocal = str(input("dame una vocal:  "))
