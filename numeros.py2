@@ -1,0 +1,19 @@
+print("#numeros")
+nveces=int(input())
+if nveces<10:
+    print('no esta permitido que sea mayor a 10')
+    cadena=''
+    for i in range(nveces):
+        print("codigo de pais")
+        cod=input()
+        print("numero de telefono")
+        num=input()
+        if len(num)==10:
+            cadena=cadena+cod+num+'/'
+        else:
+            break   #continue
+        
+                
+    print(cadena)
+
+    
