@@ -1,0 +1,44 @@
+def sumar(num1, num2):
+    return num1 + num2
+
+def imprime (a):
+    print(a)
+
+a= int(input())
+b= int(input())
+
+print("el resultado es", a+b)
+resultado=a+b
+print("res:",resultado)
+
+print(sumar(a,b))
+res=sumar(a,b)
+print(res)
+
+def mcd(a,b): 
+    indicador=0
+    try
+        r=1
+        primos=[2,3,5]
+   
+        for i in range(10):
+            valor=primos[indicador]
+            print(valor)
+            print('modulo',a%valor)
+            if a%valor==0 and b%valor==0:
+            r=r*valor
+            a=a/valor
+            b=b/valor
+
+         
+        else:
+            indicador=indicador+1
+            
+      
+    return r
+print("mcd es:",mcd(a,b))
+
+
+
+cadena= input("dime una frase")
+print("tiene" + str(len(cadena)) + "letras")
