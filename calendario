@@ -1,0 +1,17 @@
+lista=['mariposa','hola','jeika','ana','perroni','machupichu','tabla','tangamandapio','numeros','zepeto']
+print(sorted(lista))
+print(sorted(lista,reverse=True))
+
+meses=['','enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio','agosto', 'septiembre', 'cotubre','noviembre','diciembre']
+
+con31=[1,3,5,7,8,10,12]
+con30=[4,6,9,11]
+con29=[2]
+
+for mes in range(1,13):
+    if con30.count(mes):
+        print('{}-{}'.format(meses[mes],list(range(1,31))))
+    elif con31.count(mes):
+        print('{}-{}'.format(meses[mes],list(range(1,32))))
+    else:   
+        print('{}-{}'.format(meses[mes],list(range(1,29))))
