@@ -1,0 +1,16 @@
+def juntar(prefijos,lista):
+    salida=[]
+
+    for prefijo in prefijos:
+        for nombre in lista:
+            salida.append('{}{}'.format(prefijo,nombre))
+    return salida
+
+
+lista=['carlos','juan','mario']
+prefijos=['1989-','2081-','1050-']
+lp=juntar(prefijos,lista)
+print(lp.count('1989-carlos'))
+
+numbers=[5,100,1,30,21,10]
+print(sorted(numbers))
