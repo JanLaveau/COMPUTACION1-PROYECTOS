@@ -1,0 +1,82 @@
+diccionario={
+                'direccion':{
+                                'calle':'madero',
+                              'numero':'100',
+                              'colonia':'centro',
+                },diccionario={
+                'direccion':{
+                                'calle':'madero',
+                              'numero':'100',
+                              'colonia':'centro',
+                },
+                'telefonos':[{'telefono':'4431'},
+                                {'telefono':'4432'}],
+
+                'nombre':'carlos',
+                'Apellido':'Garcia',
+}
+
+print(diccionario['nombre'])
+print(diccionario['Apellido'])
+print(diccionario['direccion'])
+
+print(diccionario['direccion']['colonia'])
+
+#for llave in diccionario.keys():
+    #print(llave)
+    #print(diccionario[llave])
+
+    #print(diccionario.values())
+
+for llave in diccionario.keys():
+    if type(diccionario[llave])==dict:
+        for ll2 in diccionario[llave]:
+            print(diccionario[llave][ll2])
+
+    elif type(diccionario[llave])==list:
+        for elm in diccionario[llave]:
+            print(elm)
+    else:
+        print(diccionario[llave])
+
+
+lista1=['nombre','edad']
+lista2=['raul',30]
+
+x=dict(zip(lista1,lista2))
+print(x)                'telefonos':[{'telefono':'4431'},
+                                {'telefono':'4432'}],
+
+                'nombre':'carlos',
+                'Apellido':'Garcia',
+}
+
+print(diccionario['nombre'])
+print(diccionario['Apellido'])
+print(diccionario['direccion'])
+
+print(diccionario['direccion']['colonia'])
+
+#for llave in diccionario.keys():
+    #print(llave)
+    #print(diccionario[llave])
+
+    #print(diccionario.values())
+
+for llave in diccionario.keys():
+    if type(diccionario[llave])==dict:
+        for ll2 in diccionario[llave]:
+            print(diccionario[llave][ll2])
+
+    elif type(diccionario[llave])==list:
+        for elm in diccionario[llave]:
+            print(elm)
+    else:
+        print(diccionario[llave])
+
+
+lista1=['nombre','edad']
+lista2=['raul',30]
+
+x=dict(zip(lista1,lista2))
+print(x)
