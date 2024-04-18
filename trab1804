@@ -1,0 +1,29 @@
+#suma
+def suma (a,b):
+    return (a+b)
+
+def resta (a,b):
+    return(a-b)
+
+#signo
+from suma import suma,resta
+print(suma(3,2))
+print(resta(5,2))
+
+
+#numpy
+import numpy as np 
+a=np.arange(8,50,3)
+print(a)
+
+#layla
+lista=[5,27,30,1,3,2]
+Sal=[]
+i=lista.pop()
+while i>0:
+ 
+            print(i)
+            if len(lista):
+                i=lista.pop()
+            else:
+                break
