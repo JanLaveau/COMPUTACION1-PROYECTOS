@@ -1,0 +1,108 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+fig.subplots_adjimport matplotlib.pyplot as plt
+import numpy as np 
+
+x=np.linspace(-1,10,100)
+
+fx=2*x**x+3*x+8
+#para realizar una grafica
+plt.plot(x,fx,'*', color='yellow',markersize =10 )
+#para ponerle titulo
+plt.title('$2x^2+3x+8$')
+#para que salga el nombre del eje
+plt.xlabel('eje X')
+plt.ylabel('eje Y')
+plt.show()
+#plt.savefig('grafica.png') sirve para guardar la grifca como imagen pero debes ponerlo en lugar el showust(top=0.8)
+ax1 = fig.add_subplot(211)
+ax1.set_ylabel('Voltage [V]')
+ax1.set_title('A sine wave')
+
+t = np.arange(0.0, 1.0, 0.01)
+s = np.sin(2*np.pi*t)
+line, = ax1.plot(t, s, color='blue', lw=2)
+
+# Fixing random state for reproducibility
+np.random.seed(19680801)
+import matplotlib.pyplot as plt
+import numpy as np 
+
+x=np.linspace(-1,10,100)
+
+fx=2*x**x+3*x+8
+#para realizar una grafica
+plt.plot(x,fx,'*import matplotlib.pyplot as plt
+import numpy as np 
+
+x=np.linspace(-1,10,100)
+
+fx=2*x**x+3*x+8
+#para realizar una grafica
+plt.plot(x,fx,'*', color='yellow',markersize =10 )
+#para ponerle titulo
+plt.title('$2x^2+3x+8$')
+#para que salga el nombre del eje
+plt.xlabel('eje X')
+plt.ylabel('eje Y')
+plt.show()
+#plt.savefig('grafica.png') sirve para guardar la grifca como imagen pero debes ponerlo en lugar el show', color='yellow',markersize =10 )
+#para ponerle titulo
+plt.title('$2x^2+3x+8$')
+#para que salga el nombre del eje
+plt.xlabel('eje X')
+plt.ylabel('eje Y')
+plt.show()
+#plt.savefig('grafica.png') sirve para guardar la grifca como imagen pero debes ponerlo en lugar el show
+ax2 = fig.add_axes([0.15, 0.1, 0.7, 0.3])import matplotlib.pyplot as plt
+import numpy as np 
+
+x=np.linspace(-1,10,100)
+
+fx=2*x**x+3*x+8
+#para realizar una grafica
+plt.plot(x,fx,'*', color='yellow',markersize =10 )
+#para ponerle titulo
+plt.title('$2x^2+3x+8$')
+#para que salga el nombre del ejeimport matplotlib.pyplot as plt
+import numpy as np 
+
+x=np.linspace(-1,10,100)
+
+fx=2*x**x+3*x+8
+#para realizar una grafica
+plt.plot(x,fx,'*', color='yellow',markersize =10 )
+#para ponerle titulo
+plt.title('$2x^2+3x+8$')
+#para que salga el nombre del eje
+plt.xlabel('eje X')
+plt.ylabel('eje Y')
+plt.show()
+#plt.savefig('grafica.png') sirve para guardar la grifca como imagen pero debes ponerlo en lugar el show
+plt.xlabel('eje X')
+plt.ylabel('eje Y')
+plt.show()
+#plt.savefig('grafica.png') sirve para guardar la grifca como imagen pero debes ponerlo en lugar el show
+n, bins, patches = ax2.hist(np.random.randn(1000), 50,
+                            facecolor='yellow', edgecolor='yellow')
+ax2.set_xlabel('Time [s]')
+
+plt.savefig('grafica.png')
+
+import matplotlib.pyplot as plt
+import numpy as np 
+
+x=np.linspace(-1,10,100)
+
+fx=2*x**x+3*x+8
+#para realizar una grafica
+plt.plot(x,fx,'*', color='yellow',markersize =10 )
+#para ponerle titulo
+plt.title('$2x^2+3x+8$')
+#para que salga el nombre del eje
+plt.xlabel('eje X')
+plt.ylabel('eje Y')
+plt.show()
+#plt.savefig('grafica.png') sirve para guardar la grifca como imagen pero debes ponerlo en lugar el show
