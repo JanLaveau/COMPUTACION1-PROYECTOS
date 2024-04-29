@@ -8,7 +8,7 @@ x=np.linspace(-6,2)
 fx=5-4*x-x**2
 
 plt.plot(x,fx,'-', color='yellow',markersize =10 )
-plt.title('amarillo es $5-4x-x^2$,\nmorado es $2x^2-8x-11$,\nazul es $xe^-2x$')
+plt.title('amarillo es $5-4x-x^2$,\nmorado es $2x^2-8x-11$,\nazul es $x(e^-2x)$,\nrosa es e^-0.1x(sen(2x))')
 
 x2=np.linspace(-1,5)
 
@@ -21,6 +21,8 @@ x3=np.linspace(-1,5)
 fx3=x3*(1/e**2)*x3
 plt.plot(x3,fx3,'-', color='blue',markersize =10 )
 
-#x4=np.linspace(0,24)
-#fx4=(1/e)
+x4=np.linspace(0,24)
+fx4=np.sin(1/e**0.1*x4)
+plt.plot(x4,fx4,'-', color='pink',markersize =10 )
+
 plt.show()
