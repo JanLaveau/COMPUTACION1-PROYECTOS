@@ -1,0 +1,26 @@
+from dataclasses import replace
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt 
+
+df=pd.read_csv('/home/alumno/datos.csv',header=0,delimiter=',',quotechar='"')
+
+
+
+
+a=df["municipio"]
+b=df['poblacion']
+municipio=a.to_list()
+poblacion=b.to_list()
+print(municipio,poblacion)
+
+total=sum(list(map(lambda x: int(x.replace(',','')),poblacion)))
+
+aporc=[int(i.replace(',',''))/total for i in b[0:10]]
+
+#fig, ax = plt.subplots()
+#ax.bar(x = a[0:10], height = b[0:10])
+
+#print(aporc)
+plt.pie(aporc, labels=a[0:10])
+plt.show()
