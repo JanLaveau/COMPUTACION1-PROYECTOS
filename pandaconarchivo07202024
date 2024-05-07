@@ -1,0 +1,36 @@
+import pandas as pd 
+
+#calories={"dia1":420,"dia2":300,"dia3":390}
+
+#myvar=pd.Series(calories)
+
+#print(myvar['dia3'])
+#data={
+#    "calories":[420,380,390],
+#    "duration":[50,40,45]
+#}
+
+#myvar=pd.DataFrame(data)
+#print(myvar["calories"][0])
+
+#print(myvar.loc[0])
+#print(myvar.loc[[0,1]])
+
+juegos=pd.read_csv('/Users/taller/Downloads/videogamesales.csv')
+print(juegos.loc[3])
+print(pd.options.display.max_rows)
+
+#print(juegos.loc[[len(juegos)-10,len(juegos)-1]].to_string()) es para sacarlo en cadena
+
+sla=juegos.loc[[len(juegos)-10,len(juegos)-1]].to_dict() #para sacarlo en diccionario
+print(sla['Name'][16326])
+
+for item in sla['Rank'].keys():
+    print(sla['Rank'][item])
+
+
+jan=juegos.loc[0:10,['Rank','Name']]
+print(jan)
+
+df=juegos[juegos['Year']>1995]
+print(df)
