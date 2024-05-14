@@ -1,0 +1,44 @@
+import pandas as pd 
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+file=pd.read_csv('/Users/taller/Downloads/peliculas.csv')
+#print(file.shape)
+#print(file.size)
+#print(file.dtypes)
+
+#file.iloc[590]
+#file.loc[590]
+#file.loc["Forrest Gump"]
+
+#print(file.sort_values(by='Year',ascending=True).head())
+#para ordenar de año y rango (by=['Year','Rank'],ascending=True).head()
+#file.sort.index().head()
+
+#print(file['Studio'].value_counts()) #para contar cuantasha y por nombre
+
+#print(file[file['Studio']=='Universal'])
+filtro_por_Studio=file['Studio']=='Universal'
+filtro_por_Year=file['Year']>=2015
+datos=file[filtro_por_Studio & filtro_por_Year]
+print(datos)
+
+#pelis_de_80=file['Year'].between(1980,1990)
+#file[pelis_de_80]
+#a=pelis_con_dark=file.index.str.lower().str.contains('dark')
+#print(a)
+
+file['Gross']=(file['Gross'].str.replace('$','',regex=False)
+                        .str.replace(',','',regex=False)
+                        .astype(float)
+                        )
+print(file['Gross'].mean())
+
+
+
+
+tabla de fracuencias por titulo y por año 
+
+
+3 opeliculas con mas presupuesto
