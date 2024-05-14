@@ -1,0 +1,45 @@
+import pandas as pd 
+import matplotlib.pyplot as plt
+import numpy as np
+import urllib.request, urllib.error, urllib.parse
+
+
+
+file=pd.read_csv('/Users/taller/Downloads/Movies(1970-2023).csv')
+
+palabra =input()
+archivo =input(file)
+ 
+repetidas = 0                  
+f = open(archivo, "r")          
+lines = f.readlines()           
+ 
+for line in lines:              
+    palabras = line.split(' ')   
+    for p in palabras:          
+        if p == palabra:        
+            repetidas = repetidas + 1   # CONTADOR
+ 
+  
+print.format(palabra,repetidas,archivo)
+
+
+#file['Gross']=file['Gross'].str.replace(',','', regex=False)
+#jan=file.loc[1:12,['movie title','imdb id']]
+#file['Gross'].mean()
+#print(jan)
+#plt.pie(jan)
+#plt.show()
+
+# Agrupamos y contamos cada grupo
+
+#jan=file["movie title"].str.replace(',','', regex=False)
+#a=jan["movie title"].count()
+#print(a)
+
+
+#a=file['movie title'].value_counts()
+#print(a)
+
+#plt.hist(a)
+#plt.show()
