@@ -1,0 +1,39 @@
+import pandas as pd 
+import matplotlib.pyplot as plt
+import numpy as np
+import urllib.request, urllib.error, urllib.parse
+
+
+
+file=pd.read_csv('/Users/taller/Downloads/Movies(1970-2023).csv')
+
+datos=file.loc[1:12['movie title','rating']]
+#print(datos)
+plt.figure(figsize=(8, 6))
+plt.pie(datos.sum(), labels=datos.columns, autopct='%1.1f%%', startangle=90)
+plt.title("Gráfico de Pastel")
+
+#para mostrar el gráfico
+plt.show()
+
+
+#parte 2 ver que palabras se repiten mas en el archivo
+jan=file['texto'].str.split().explode()
+word_counts = words.value_counts()
+
+jan= ' '.join(file['texto'])
+palabras= pd.Series(jan.split())
+final= palabras.value_counts()
+
+total=final.head(10)
+print(total)
+
+# Graficando las 10 palabras mas repetidas en un histograma
+
+plt.figure(figsize=(10, 10))
+plt.bar(total.index, total.values)
+plt.xlabel('Palabras')
+plt.ylabel('Frecuencia')
+plt.title('Palabras que mas se reoiten')
+plt.xticks(rotation=45)
+plt.show()
