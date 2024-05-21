@@ -1,0 +1,41 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+dt=pd.read_csv('Movies(1970-2023).csv')
+df=dt[['director','rating','genres']]
+grupo=df.groupby(['director','genres','rating']).first()
+print(grupo.iloc[1])
+dic=df.groupby('director')['genres'].apply(list).to_dict()
+print(dic)
+output=[]
+for i in range(len(grupo)):
+  dicc={}
+  director,genero,rt=grupo.iloc[i].name 
+
+
+  dicc['director']=director
+  dicc['genero']=genero.replace('[','').replace(']','').replace("'","").split(',')
+  dicc['rating']=rt
+  output.append(dicc)
+
+print(output)
+directores=set()
+for i in output:
+  directores.add(i['director'])
+
+print(directores)
+dicdirector={}
+for i in directores:
+  dicdirector[i]={'genero':[],'rating':[]}
+
+print(dicdirector)
+
+for x in output:
+  nd,gr,rt=x.values()
+  dicdirector[nd]['genero']=dicdirector[nd]['genero']+gr
+
+print(dicdirector)
+
+plt.figure(figsize=(10, 10))
+fig, ax = plt.subplots()
+plt.hist(dicdirector,['Adventure', ' Comedy', ' rating'])
+plt.show
